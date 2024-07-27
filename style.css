@@ -32,6 +32,7 @@ form input{
     color: 	#000000;
     font-size: 18px;
     padding: 0 30px;
+    border-radius: 8px;
 }
 form button{
     padding: 0 40px;
@@ -49,8 +50,8 @@ form button{
     color: black;
     background-color: white;
     font-size: 18px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+/*     border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px; */
 }
 #show-more-btn{
     background: #8a0ce9;
@@ -76,4 +77,16 @@ form button{
     height: 230px;
     object-fit: cover;
     border-radius: 10px;
+}
+@media only screen and (max-width:650px){
+    #search-result{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    form button{
+        border-radius: 8px;
+    }
+    form{
+        flex-wrap: wrap;
+    }
 }
